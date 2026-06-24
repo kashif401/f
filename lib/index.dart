@@ -49,3 +49,5 @@ export '/login/activity_home_screen2/activity_home_screen2_widget.dart'
 export '/visitors/generate_q_r_save/generate_q_r_save_widget.dart'
     show GenerateQRSaveWidget;
 export '/login/otp/otp_widget.dart' show OtpWidget;
+export '/redesign_this_vehicle_page/redesign_this_vehicle_page_widget.dart'
+    show RedesignThisVehiclePageWidget;

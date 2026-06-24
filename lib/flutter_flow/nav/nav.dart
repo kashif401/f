@@ -179,6 +179,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: OtpWidget.routeName,
           path: OtpWidget.routePath,
           builder: (context, params) => OtpWidget(),
+        ),
+        FFRoute(
+          name: RedesignThisVehiclePageWidget.routeName,
+          path: RedesignThisVehiclePageWidget.routePath,
+          builder: (context, params) => RedesignThisVehiclePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

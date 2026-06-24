@@ -1,10 +1,10 @@
-import '/components/error_msg_text_widget.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/utils/button/button_widget.dart';
+import '/utils/error_msg_text/error_msg_text_widget.dart';
 import '/utils/form_label/form_label_widget.dart';
 import '/utils/picker_trigger/picker_trigger_widget.dart';
 import '/flutter_flow/custom_functions.dart' as functions;

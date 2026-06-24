@@ -10,10 +10,11 @@ const _kPrivateApiFunctionName = 'ffPrivateApiCall';
 /// Start Global Group Code
 
 class GlobalGroup {
-  static String getBaseUrl() => 'https://ems.icicipruamc.com/global_api/api';
+  static String getBaseUrl() => 'https://ems.icicipruamc.com/global-api-wrp';
   static Map<String, String> headers = {};
   static UATLoginCall uATLoginCall = UATLoginCall();
   static RefreshtokenCall refreshtokenCall = RefreshtokenCall();
+  static SendOTPCall sendOTPCall = SendOTPCall();
 }
 
 class UATLoginCall {
@@ -25,7 +26,7 @@ class UATLoginCall {
 
     return ApiManager.instance.makeApiCall(
       callName: 'UAT login',
-      apiUrl: '${baseUrl}/uat/uat-login',
+      apiUrl: '${baseUrl}/api/auth/login',
       callType: ApiCallType.POST,
       headers: {},
       params: {
@@ -60,6 +61,34 @@ class RefreshtokenCall {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
+      params: {},
+      body: ffApiRequestBody,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      isStreamingApi: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class SendOTPCall {
+  Future<ApiCallResponse> call({
+    String? mobile = '',
+  }) async {
+    final baseUrl = GlobalGroup.getBaseUrl();
+
+    final ffApiRequestBody = '''
+{
+  "mobile": "${escapeStringForJson(mobile)}"
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'SendOTP',
+      apiUrl: '${baseUrl}/verify/send-otp',
+      callType: ApiCallType.POST,
+      headers: {},
       params: {},
       body: ffApiRequestBody,
       bodyType: BodyType.JSON,
@@ -117,4 +146,15 @@ String _serializeJson(dynamic jsonVar, [bool isList = false]) {
     }
     return isList ? '[]' : '{}';
   }
+}
+
+String? escapeStringForJson(String? input) {
+  if (input == null) {
+    return null;
+  }
+  return input
+      .replaceAll('\\', '\\\\')
+      .replaceAll('"', '\\"')
+      .replaceAll('\n', '\\n')
+      .replaceAll('\t', '\\t');
 }

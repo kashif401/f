@@ -1,4 +1,3 @@
-import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'login_screen_widget.dart' show LoginScreenWidget;
@@ -23,8 +22,6 @@ class LoginScreenModel extends FlutterFlowModel<LoginScreenWidget> {
   late bool passwordtextfieldVisibility;
   String? Function(BuildContext, String?)?
       passwordtextfieldTextControllerValidator;
-  // Stores action output result for [Backend Call - API (UAT login)] action in Button widget.
-  ApiCallResponse? apiResultt1y;
   bool biometricResult = false;
 
   @override

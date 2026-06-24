@@ -1,4 +1,3 @@
-import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -612,7 +611,6 @@ class _LoginScreenWidgetState extends State<LoginScreenWidget> {
                                     width: double.infinity,
                                     child: FFButtonWidget(
                                       onPressed: () async {
-                                        var _shouldSetState = false;
                                         if (_model.employeeIdTextController
                                                     .text ==
                                                 '') {
@@ -628,75 +626,14 @@ class _LoginScreenWidgetState extends State<LoginScreenWidget> {
                                                 '') {
                                           _model.showPasswordError = true;
                                           safeSetState(() {});
-                                          if (_shouldSetState)
-                                            safeSetState(() {});
                                           return;
                                         } else {
                                           _model.showPasswordError = false;
                                           safeSetState(() {});
-                                          _model.apiResultt1y =
-                                              await GlobalGroup.uATLoginCall
-                                                  .call(
-                                            username: _model
-                                                .employeeIdTextController.text,
-                                            password: _model
-                                                .passwordtextfieldTextController
-                                                .text,
-                                          );
 
-                                          _shouldSetState = true;
-                                          if ((_model.apiResultt1y?.succeeded ??
-                                              true)) {
-                                            FFAppState().accessToken =
-                                                getJsonField(
-                                              (_model.apiResultt1y?.jsonBody ??
-                                                  ''),
-                                              r'''$.data.access_token''',
-                                            ).toString();
-                                            FFAppState().refreshToken =
-                                                getJsonField(
-                                              (_model.apiResultt1y?.jsonBody ??
-                                                  ''),
-                                              r'''$.data.refresh_token''',
-                                            ).toString();
-                                            FFAppState().isLoggedIn = true;
-                                            FFAppState().isBiometricEnabled =
-                                                true;
-                                            safeSetState(() {});
-
-                                            context
-                                                .pushNamed(OtpWidget.routeName);
-
-                                            if (_shouldSetState)
-                                              safeSetState(() {});
-                                            return;
-                                          } else {
-                                            ScaffoldMessenger.of(context)
-                                                .showSnackBar(
-                                              SnackBar(
-                                                content: Text(
-                                                  'Invalid Username or Password',
-                                                  style: TextStyle(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryBackground,
-                                                  ),
-                                                ),
-                                                duration: Duration(
-                                                    milliseconds: 4000),
-                                                backgroundColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .info30,
-                                              ),
-                                            );
-                                            if (_shouldSetState)
-                                              safeSetState(() {});
-                                            return;
-                                          }
+                                          context
+                                              .pushNamed(OtpWidget.routeName);
                                         }
-
-                                        if (_shouldSetState)
-                                          safeSetState(() {});
                                       },
                                       text: 'Login',
                                       options: FFButtonOptions(

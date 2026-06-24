@@ -1,3 +1,4 @@
+import '/components/add_vehecle_widget.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -709,24 +710,57 @@ class _AppointVisitorWidgetState extends State<AppointVisitorWidget> {
                                           ),
                                         ].divide(SizedBox(width: 8.0)),
                                       ),
-                                      Switch.adaptive(
-                                        value: _model.switchValue!,
-                                        onChanged: (newValue) async {
-                                          safeSetState(() =>
-                                              _model.switchValue = newValue);
-                                        },
-                                        activeColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        activeTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        inactiveTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .alternate,
-                                        inactiveThumbColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
+                                      Builder(
+                                        builder: (context) => Switch.adaptive(
+                                          value: _model.switchValue!,
+                                          onChanged: (newValue) async {
+                                            safeSetState(() =>
+                                                _model.switchValue = newValue);
+                                            if (newValue) {
+                                              await showDialog(
+                                                context: context,
+                                                builder: (dialogContext) {
+                                                  return Dialog(
+                                                    elevation: 0,
+                                                    insetPadding:
+                                                        EdgeInsets.zero,
+                                                    backgroundColor:
+                                                        Colors.transparent,
+                                                    alignment:
+                                                        AlignmentDirectional(
+                                                                0.0, 0.0)
+                                                            .resolve(
+                                                                Directionality.of(
+                                                                    context)),
+                                                    child: GestureDetector(
+                                                      onTap: () {
+                                                        FocusScope.of(
+                                                                dialogContext)
+                                                            .unfocus();
+                                                        FocusManager.instance
+                                                            .primaryFocus
+                                                            ?.unfocus();
+                                                      },
+                                                      child: AddVehecleWidget(),
+                                                    ),
+                                                  );
+                                                },
+                                              );
+                                            }
+                                          },
+                                          activeColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primary,
+                                          activeTrackColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primary,
+                                          inactiveTrackColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .alternate,
+                                          inactiveThumbColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .secondaryBackground,
+                                        ),
                                       ),
                                     ],
                                   ),
