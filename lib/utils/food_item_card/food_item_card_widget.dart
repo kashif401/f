@@ -122,7 +122,7 @@ class _FoodItemCardWidgetState extends State<FoodItemCardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleMedium
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FontWeight.bold,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .titleMedium
@@ -155,7 +155,7 @@ class _FoodItemCardWidgetState extends State<FoodItemCardWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -191,7 +191,7 @@ class _FoodItemCardWidgetState extends State<FoodItemCardWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
                               .override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.mulish(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .fontWeight,
@@ -225,7 +225,7 @@ class _FoodItemCardWidgetState extends State<FoodItemCardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleMedium

@@ -58,12 +58,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: MeetingRoomFilterWidget.routeName,
           path: MeetingRoomFilterWidget.routePath,
-          builder: (context, params) => MeetingRoomFilterWidget(),
-        ),
-        FFRoute(
-          name: AvailableRoomsWidget.routeName,
-          path: AvailableRoomsWidget.routePath,
-          builder: (context, params) => AvailableRoomsWidget(),
+          builder: (context, params) => MeetingRoomFilterWidget(
+            branchCode: params.getParam(
+              'branchCode',
+              ParamType.int,
+            ),
+          ),
         ),
         FFRoute(
           name: AppointVisitorWidget.routeName,
@@ -83,7 +83,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: BookingConfirmationWidget.routeName,
           path: BookingConfirmationWidget.routePath,
-          builder: (context, params) => BookingConfirmationWidget(),
+          builder: (context, params) => BookingConfirmationWidget(
+            startTime: params.getParam(
+              'startTime',
+              ParamType.DateTime,
+            ),
+          ),
         ),
         FFRoute(
           name: BookingSuccessWidget.routeName,
@@ -184,6 +189,250 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: RedesignThisVehiclePageWidget.routeName,
           path: RedesignThisVehiclePageWidget.routePath,
           builder: (context, params) => RedesignThisVehiclePageWidget(),
+        ),
+        FFRoute(
+          name: TestWidget.routeName,
+          path: TestWidget.routePath,
+          builder: (context, params) => TestWidget(),
+        ),
+        FFRoute(
+          name: DashboardShimmerWidget.routeName,
+          path: DashboardShimmerWidget.routePath,
+          builder: (context, params) => DashboardShimmerWidget(),
+        ),
+        FFRoute(
+          name: LocationSearchWidget.routeName,
+          path: LocationSearchWidget.routePath,
+          builder: (context, params) => LocationSearchWidget(),
+        ),
+        FFRoute(
+          name: RoomDashboardWidget.routeName,
+          path: RoomDashboardWidget.routePath,
+          builder: (context, params) => RoomDashboardWidget(),
+        ),
+        FFRoute(
+          name: AddVisitorWidget.routeName,
+          path: AddVisitorWidget.routePath,
+          builder: (context, params) => AddVisitorWidget(),
+        ),
+        FFRoute(
+          name: EnterpriseDesignSystemWidget.routeName,
+          path: EnterpriseDesignSystemWidget.routePath,
+          builder: (context, params) => EnterpriseDesignSystemWidget(),
+        ),
+        FFRoute(
+          name: AllAvailableRoomsWidget.routeName,
+          path: AllAvailableRoomsWidget.routePath,
+          builder: (context, params) => AllAvailableRoomsWidget(),
+        ),
+        FFRoute(
+          name: MeetingRoomFilterCopyWidget.routeName,
+          path: MeetingRoomFilterCopyWidget.routePath,
+          builder: (context, params) => MeetingRoomFilterCopyWidget(
+            branchCode: params.getParam(
+              'branchCode',
+              ParamType.int,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: VisitorManagementWidget.routeName,
+          path: VisitorManagementWidget.routePath,
+          builder: (context, params) => VisitorManagementWidget(),
+        ),
+        FFRoute(
+          name: AddNewVisitorWidget.routeName,
+          path: AddNewVisitorWidget.routePath,
+          builder: (context, params) => AddNewVisitorWidget(
+            visitorPhoto: params.getParam(
+              'visitorPhoto',
+              ParamType.FFUploadedFile,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: CaptureVisitorPhotoWidget.routeName,
+          path: CaptureVisitorPhotoWidget.routePath,
+          builder: (context, params) => CaptureVisitorPhotoWidget(),
+        ),
+        FFRoute(
+          name: ReviewPhotoWidget.routeName,
+          path: ReviewPhotoWidget.routePath,
+          builder: (context, params) => ReviewPhotoWidget(
+            visitorPhoto: params.getParam(
+              'visitorPhoto',
+              ParamType.FFUploadedFile,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: VisitorPassWidget.routeName,
+          path: VisitorPassWidget.routePath,
+          builder: (context, params) => VisitorPassWidget(
+            visitorId: params.getParam(
+              'visitorId',
+              ParamType.int,
+            ),
+            visitId: params.getParam(
+              'visitId',
+              ParamType.int,
+            ),
+            qrToken: params.getParam(
+              'qrToken',
+              ParamType.String,
+            ),
+            qrImageUrl: params.getParam(
+              'qrImageUrl',
+              ParamType.String,
+            ),
+            visitorName: params.getParam(
+              'visitorName',
+              ParamType.String,
+            ),
+            company: params.getParam(
+              'company',
+              ParamType.String,
+            ),
+            visitDate: params.getParam(
+              'visitDate',
+              ParamType.String,
+            ),
+            startTime: params.getParam(
+              'startTime',
+              ParamType.String,
+            ),
+            endTime: params.getParam(
+              'endTime',
+              ParamType.String,
+            ),
+            hostName: params.getParam(
+              'hostName',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: ScanVisitorQRWidget.routeName,
+          path: ScanVisitorQRWidget.routePath,
+          builder: (context, params) => ScanVisitorQRWidget(),
+        ),
+        FFRoute(
+          name: VisitorVerificationCardWidget.routeName,
+          path: VisitorVerificationCardWidget.routePath,
+          builder: (context, params) => VisitorVerificationCardWidget(),
+        ),
+        FFRoute(
+          name: CheckInSuccessWidget.routeName,
+          path: CheckInSuccessWidget.routePath,
+          builder: (context, params) => CheckInSuccessWidget(),
+        ),
+        FFRoute(
+          name: CheckOutVerificationWidget.routeName,
+          path: CheckOutVerificationWidget.routePath,
+          builder: (context, params) => CheckOutVerificationWidget(),
+        ),
+        FFRoute(
+          name: ActivityHomeScreen2CopyWidget.routeName,
+          path: ActivityHomeScreen2CopyWidget.routePath,
+          builder: (context, params) => ActivityHomeScreen2CopyWidget(),
+        ),
+        FFRoute(
+          name: NewScreen1Widget.routeName,
+          path: NewScreen1Widget.routePath,
+          builder: (context, params) => NewScreen1Widget(),
+        ),
+        FFRoute(
+          name: UpcomingBookingsListWidget.routeName,
+          path: UpcomingBookingsListWidget.routePath,
+          builder: (context, params) => UpcomingBookingsListWidget(),
+        ),
+        FFRoute(
+          name: NewVisitorRegistrationWidget.routeName,
+          path: NewVisitorRegistrationWidget.routePath,
+          builder: (context, params) => NewVisitorRegistrationWidget(),
+        ),
+        FFRoute(
+          name: NewVistorModuleWidget.routeName,
+          path: NewVistorModuleWidget.routePath,
+          builder: (context, params) => NewVistorModuleWidget(),
+        ),
+        FFRoute(
+          name: NewScreen4Widget.routeName,
+          path: NewScreen4Widget.routePath,
+          builder: (context, params) => NewScreen4Widget(),
+        ),
+        FFRoute(
+          name: TestchckWidget.routeName,
+          path: TestchckWidget.routePath,
+          builder: (context, params) => TestchckWidget(),
+        ),
+        FFRoute(
+          name: VisitorCheckInWidget.routeName,
+          path: VisitorCheckInWidget.routePath,
+          builder: (context, params) => VisitorCheckInWidget(),
+        ),
+        FFRoute(
+          name: VisitorCheckOutWidget.routeName,
+          path: VisitorCheckOutWidget.routePath,
+          builder: (context, params) => VisitorCheckOutWidget(),
+        ),
+        FFRoute(
+          name: VisitorSuccessWidget.routeName,
+          path: VisitorSuccessWidget.routePath,
+          builder: (context, params) => VisitorSuccessWidget(),
+        ),
+        FFRoute(
+          name: AddNewVisitorAutofillWidget.routeName,
+          path: AddNewVisitorAutofillWidget.routePath,
+          builder: (context, params) => AddNewVisitorAutofillWidget(
+            visitorPhoto: params.getParam(
+              'visitorPhoto',
+              ParamType.FFUploadedFile,
+            ),
+            phone: params.getParam(
+              'phone',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: CreateVisitorWidget.routeName,
+          path: CreateVisitorWidget.routePath,
+          builder: (context, params) => CreateVisitorWidget(),
+        ),
+        FFRoute(
+          name: AppointmentSuccessWidget.routeName,
+          path: AppointmentSuccessWidget.routePath,
+          builder: (context, params) => AppointmentSuccessWidget(),
+        ),
+        FFRoute(
+          name: VisitorAppointmentsListWidget.routeName,
+          path: VisitorAppointmentsListWidget.routePath,
+          builder: (context, params) => VisitorAppointmentsListWidget(),
+        ),
+        FFRoute(
+          name: AppointmentDetailsWidget.routeName,
+          path: AppointmentDetailsWidget.routePath,
+          builder: (context, params) => AppointmentDetailsWidget(),
+        ),
+        FFRoute(
+          name: NewScreen12Widget.routeName,
+          path: NewScreen12Widget.routePath,
+          builder: (context, params) => NewScreen12Widget(),
+        ),
+        FFRoute(
+          name: CreateAppointmentNewWidget.routeName,
+          path: CreateAppointmentNewWidget.routePath,
+          builder: (context, params) => CreateAppointmentNewWidget(
+            visitorId: params.getParam(
+              'visitorId',
+              ParamType.int,
+            ),
+            vehicle: params.getParam(
+              'vehicle',
+              ParamType.String,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

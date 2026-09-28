@@ -87,7 +87,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .override(
-                                  font: GoogleFonts.plusJakartaSans(
+                                  font: GoogleFonts.mulish(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .fontWeight,
@@ -176,7 +176,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .headlineSmall
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .headlineSmall
@@ -206,7 +206,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.mulish(
                                           fontWeight: FontWeight.bold,
                                           fontStyle:
                                               FlutterFlowTheme.of(context)
@@ -246,7 +246,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.mulish(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
@@ -288,7 +288,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.mulish(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelLarge
@@ -330,7 +330,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .labelSmall
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.mulish(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .labelSmall
@@ -377,7 +377,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .titleSmall
@@ -404,7 +404,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -438,7 +438,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .titleSmall
@@ -491,8 +491,8 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                                           context)
                                                       .titleMedium
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -528,7 +528,8 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                                           context)
                                                       .labelSmall
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -590,8 +591,8 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                                           context)
                                                       .titleMedium
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -627,7 +628,8 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                                           context)
                                                       .labelSmall
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -689,8 +691,8 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                                           context)
                                                       .titleMedium
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -726,7 +728,8 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                                           context)
                                                       .labelSmall
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -836,7 +839,7 @@ class _FoodDetailsWidgetState extends State<FoodDetailsWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.mulish(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleMedium

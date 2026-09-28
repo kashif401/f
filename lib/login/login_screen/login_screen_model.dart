@@ -1,3 +1,4 @@
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'login_screen_widget.dart' show LoginScreenWidget;
@@ -9,6 +10,8 @@ class LoginScreenModel extends FlutterFlowModel<LoginScreenWidget> {
   bool showUsernameError = true;
 
   bool showPasswordError = true;
+
+  dynamic decryptOTPResponse;
 
   ///  State fields for stateful widgets in this page.
 
@@ -22,7 +25,19 @@ class LoginScreenModel extends FlutterFlowModel<LoginScreenWidget> {
   late bool passwordtextfieldVisibility;
   String? Function(BuildContext, String?)?
       passwordtextfieldTextControllerValidator;
-  bool biometricResult = false;
+  // Stores action output result for [Custom Action - encryptPayloadForServer] action in Button widget.
+  dynamic encryptedResult;
+  // Stores action output result for [Backend Call - API (Login)] action in Button widget.
+  ApiCallResponse? apiResultt1y;
+  // Stores action output result for [Custom Action - decryptResponseFromServer] action in Button widget.
+  dynamic decryptResponseFromServerOutput;
+  bool biometricResultCopy = false;
+  // Stores action output result for [Custom Action - encryptPayloadForServer] action in IconButton widget.
+  dynamic encryptedRefreshCopy;
+  // Stores action output result for [Backend Call - API (RefreshToken)] action in IconButton widget.
+  ApiCallResponse? refreshResponseCopy;
+  // Stores action output result for [Custom Action - decryptResponseFromServer] action in IconButton widget.
+  dynamic decryptedRefreshCopy;
 
   @override
   void initState(BuildContext context) {

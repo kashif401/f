@@ -94,7 +94,7 @@ class _ActivityItemWidgetState extends State<ActivityItemWidget> {
                           style: FlutterFlowTheme.of(context)
                               .titleMedium
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.mulish(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .fontWeight,
@@ -122,7 +122,7 @@ class _ActivityItemWidgetState extends State<ActivityItemWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
                               .override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.mulish(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .fontWeight,

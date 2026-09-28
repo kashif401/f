@@ -1,4 +1,4 @@
-package com.mycompany.iconnect
+package appdev.iprucorp.com
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 

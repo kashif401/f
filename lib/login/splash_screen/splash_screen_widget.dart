@@ -115,7 +115,7 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .labelSmall
@@ -136,7 +136,7 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .fontWeight,

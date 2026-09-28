@@ -89,7 +89,7 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontWeight,
@@ -175,7 +175,7 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .override(
-                                              font: GoogleFonts.plusJakartaSans(
+                                              font: GoogleFonts.mulish(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .headlineSmall
@@ -205,7 +205,7 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.mulish(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .bodySmall
@@ -285,8 +285,8 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -321,8 +321,8 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -387,8 +387,8 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -423,8 +423,8 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -489,8 +489,8 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -525,8 +525,8 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                                             context)
                                                         .bodyMedium
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                             fontStyle:
@@ -569,7 +569,7 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelMedium
@@ -598,7 +598,7 @@ class _NotificationDetailsWidgetState extends State<NotificationDetailsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium

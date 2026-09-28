@@ -87,7 +87,7 @@ class _CartWidgetState extends State<CartWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
                                 .override(
-                                  font: GoogleFonts.plusJakartaSans(
+                                  font: GoogleFonts.mulish(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .fontWeight,
@@ -195,39 +195,39 @@ class _CartWidgetState extends State<CartWidget> {
                                             children: [
                                               Text(
                                                 'Grilled Chicken Salad',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .titleSmall
+                                                    .override(
+                                                      font: GoogleFonts.mulish(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .fontStyle,
+                                                      ),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .primaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontStyle,
-                                                          lineHeight: 1.4,
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontStyle,
+                                                      lineHeight: 1.4,
+                                                    ),
                                               ),
                                               Text(
                                                 'Non-Veg • High Protein',
@@ -235,7 +235,7 @@ class _CartWidgetState extends State<CartWidget> {
                                                         context)
                                                     .bodySmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -271,7 +271,7 @@ class _CartWidgetState extends State<CartWidget> {
                                                         context)
                                                     .labelLarge
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -345,8 +345,8 @@ class _CartWidgetState extends State<CartWidget> {
                                                           context)
                                                       .titleSmall
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -458,39 +458,39 @@ class _CartWidgetState extends State<CartWidget> {
                                             children: [
                                               Text(
                                                 'Veggie Hummus Wrap',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .titleSmall
+                                                    .override(
+                                                      font: GoogleFonts.mulish(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .fontStyle,
+                                                      ),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .primaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontStyle,
-                                                          lineHeight: 1.4,
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontStyle,
+                                                      lineHeight: 1.4,
+                                                    ),
                                               ),
                                               Text(
                                                 'Veg • Fresh',
@@ -498,7 +498,7 @@ class _CartWidgetState extends State<CartWidget> {
                                                         context)
                                                     .bodySmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -534,7 +534,7 @@ class _CartWidgetState extends State<CartWidget> {
                                                         context)
                                                     .labelLarge
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -608,8 +608,8 @@ class _CartWidgetState extends State<CartWidget> {
                                                           context)
                                                       .titleSmall
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -698,7 +698,7 @@ class _CartWidgetState extends State<CartWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -782,7 +782,7 @@ class _CartWidgetState extends State<CartWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -811,7 +811,7 @@ class _CartWidgetState extends State<CartWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -848,7 +848,7 @@ class _CartWidgetState extends State<CartWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -877,7 +877,7 @@ class _CartWidgetState extends State<CartWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -921,7 +921,7 @@ class _CartWidgetState extends State<CartWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .titleMedium
@@ -950,7 +950,7 @@ class _CartWidgetState extends State<CartWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight: FontWeight.bold,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)

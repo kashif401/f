@@ -1,8 +1,8 @@
-import '/components/form_label2_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/utils/button/button_widget.dart';
 import '/utils/text_field/text_field_widget.dart';
+import '/utilss/form_label2/form_label2_widget.dart';
 import '/index.dart';
 import 'redesign_this_vehicle_page_widget.dart'
     show RedesignThisVehiclePageWidget;

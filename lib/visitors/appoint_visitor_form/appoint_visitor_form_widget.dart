@@ -96,7 +96,7 @@ class _AppointVisitorFormWidgetState extends State<AppointVisitorFormWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .fontWeight,
@@ -326,7 +326,7 @@ class _AppointVisitorFormWidgetState extends State<AppointVisitorFormWidget> {
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -450,6 +450,8 @@ class _AppointVisitorFormWidgetState extends State<AppointVisitorFormWidget> {
                                                   size: 20.0,
                                                 ),
                                                 value: 'Select Date',
+                                                errorMsg: false,
+                                                errorText: 'Please Select Date',
                                               ),
                                             ),
                                           ].divide(SizedBox(height: 4.0)),
@@ -485,6 +487,8 @@ class _AppointVisitorFormWidgetState extends State<AppointVisitorFormWidget> {
                                                   size: 20.0,
                                                 ),
                                                 value: 'Select Time',
+                                                errorMsg: false,
+                                                errorText: 'Please Select Time',
                                               ),
                                             ),
                                           ].divide(SizedBox(height: 4.0)),

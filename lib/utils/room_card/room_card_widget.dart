@@ -19,6 +19,7 @@ class RoomCardWidget extends StatefulWidget {
     String? roomName,
     String? status,
     String? timing,
+    required this.startTime,
   })  : this.capacity = capacity ?? '8 Persons',
         this.cardId = cardId ?? 'room1',
         this.hasBoard = hasBoard ?? true,
@@ -38,6 +39,7 @@ class RoomCardWidget extends StatefulWidget {
   final String roomName;
   final String status;
   final String timing;
+  final DateTime? startTime;
 
   @override
   State<RoomCardWidget> createState() => _RoomCardWidgetState();
@@ -101,15 +103,12 @@ class _RoomCardWidgetState extends State<RoomCardWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              valueOrDefault<String>(
-                                widget.roomName,
-                                'Ganges Meeting Room',
-                              ),
+                              widget.roomName,
                               maxLines: 1,
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .titleMedium
@@ -142,7 +141,7 @@ class _RoomCardWidgetState extends State<RoomCardWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodySmall
@@ -189,7 +188,7 @@ class _RoomCardWidgetState extends State<RoomCardWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FontWeight.w600,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .labelSmall
@@ -233,7 +232,7 @@ class _RoomCardWidgetState extends State<RoomCardWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelSmall
                                 .override(
-                                  font: GoogleFonts.inter(
+                                  font: GoogleFonts.mulish(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .fontWeight,
@@ -261,7 +260,7 @@ class _RoomCardWidgetState extends State<RoomCardWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  font: GoogleFonts.inter(
+                                  font: GoogleFonts.mulish(
                                     fontWeight: FontWeight.w500,
                                     fontStyle: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -285,8 +284,15 @@ class _RoomCardWidgetState extends State<RoomCardWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          context
-                              .pushNamed(BookingConfirmationWidget.routeName);
+                          context.pushNamed(
+                            BookingConfirmationWidget.routeName,
+                            queryParameters: {
+                              'startTime': serializeParam(
+                                widget.startTime,
+                                ParamType.DateTime,
+                              ),
+                            }.withoutNulls,
+                          );
                         },
                         child: wrapWithModel(
                           model: _model.buttonModel,

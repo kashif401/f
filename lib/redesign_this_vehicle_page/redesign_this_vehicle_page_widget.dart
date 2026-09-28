@@ -1,10 +1,10 @@
-import '/components/form_label2_widget.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/utils/button/button_widget.dart';
 import '/utils/text_field/text_field_widget.dart';
+import '/utilss/form_label2/form_label2_widget.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -157,7 +157,7 @@ class _RedesignThisVehiclePageWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight: FontWeight.bold,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -180,7 +180,7 @@ class _RedesignThisVehiclePageWidgetState
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
@@ -248,7 +248,7 @@ class _RedesignThisVehiclePageWidgetState
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)

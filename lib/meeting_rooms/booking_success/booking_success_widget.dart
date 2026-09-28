@@ -5,6 +5,7 @@ import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
+import 'package:provider/provider.dart';
 import 'booking_success_model.dart';
 export 'booking_success_model.dart';
 
@@ -38,6 +39,8 @@ class _BookingSuccessWidgetState extends State<BookingSuccessWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return GestureDetector(
       onTap: () {
         FocusScope.of(context).unfocus();
@@ -97,7 +100,7 @@ class _BookingSuccessWidgetState extends State<BookingSuccessWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .headlineSmall
@@ -125,7 +128,7 @@ class _BookingSuccessWidgetState extends State<BookingSuccessWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -188,7 +191,7 @@ class _BookingSuccessWidgetState extends State<BookingSuccessWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -216,11 +219,14 @@ class _BookingSuccessWidgetState extends State<BookingSuccessWidget> {
                                               ),
                                         ),
                                         Text(
-                                          'IPAM-98241',
+                                          getJsonField(
+                                            FFAppState().apiresonsedatefilter,
+                                            r'''$.data.bookingRefNo''',
+                                          ).toString(),
                                           style: FlutterFlowTheme.of(context)
                                               .labelLarge
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -293,73 +299,41 @@ class _BookingSuccessWidgetState extends State<BookingSuccessWidget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                'Conference Room A',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontStyle,
-                                                          lineHeight: 1.4,
-                                                        ),
-                                              ),
-                                              Text(
-                                                'Floor 4 • BKC Office',
+                                                getJsonField(
+                                                  FFAppState()
+                                                      .apiresonsedatefilter,
+                                                  r'''$.data.roomName''',
+                                                ).toString(),
                                                 style: FlutterFlowTheme.of(
                                                         context)
-                                                    .bodySmall
+                                                    .titleSmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodySmall
+                                                                .titleSmall
                                                                 .fontWeight,
                                                         fontStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodySmall
+                                                                .titleSmall
                                                                 .fontStyle,
                                                       ),
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .secondaryText,
+                                                              .primaryText,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodySmall
+                                                              .titleSmall
                                                               .fontWeight,
                                                       fontStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodySmall
+                                                              .titleSmall
                                                               .fontStyle,
                                                       lineHeight: 1.4,
                                                     ),
@@ -405,73 +379,41 @@ class _BookingSuccessWidgetState extends State<BookingSuccessWidget> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Text(
-                                                'Thursday, Oct 24, 2024',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryText,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontStyle,
-                                                          lineHeight: 1.4,
-                                                        ),
-                                              ),
-                                              Text(
-                                                '10:00 AM - 11:30 AM',
+                                                getJsonField(
+                                                  FFAppState()
+                                                      .apiresonsedatefilter,
+                                                  r'''$.data.bookingDate''',
+                                                ).toString(),
                                                 style: FlutterFlowTheme.of(
                                                         context)
-                                                    .bodySmall
+                                                    .titleSmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodySmall
+                                                                .titleSmall
                                                                 .fontWeight,
                                                         fontStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .bodySmall
+                                                                .titleSmall
                                                                 .fontStyle,
                                                       ),
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .secondaryText,
+                                                              .primaryText,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodySmall
+                                                              .titleSmall
                                                               .fontWeight,
                                                       fontStyle:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .bodySmall
+                                                              .titleSmall
                                                               .fontStyle,
                                                       lineHeight: 1.4,
                                                     ),
@@ -498,26 +440,6 @@ class _BookingSuccessWidgetState extends State<BookingSuccessWidget> {
                               model: _model.buttonModel1,
                               updateCallback: () => safeSetState(() {}),
                               child: ButtonWidget(
-                                content: 'Add to Calendar',
-                                icon: Icon(
-                                  Icons.event_available_rounded,
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  size: 16.0,
-                                ),
-                                iconPresent: true,
-                                iconEndPresent: false,
-                                variant: 'outline',
-                                size: 'large',
-                                fullWidth: true,
-                                loading: false,
-                                disabled: false,
-                              ),
-                            ),
-                            wrapWithModel(
-                              model: _model.buttonModel2,
-                              updateCallback: () => safeSetState(() {}),
-                              child: ButtonWidget(
                                 content: 'View My Bookings',
                                 iconPresent: false,
                                 iconEndPresent: false,
@@ -538,10 +460,10 @@ class _BookingSuccessWidgetState extends State<BookingSuccessWidget> {
                               highlightColor: Colors.transparent,
                               onTap: () async {
                                 context.pushNamed(
-                                    ActivityHomeScreen2Widget.routeName);
+                                    ActivityHomeScreen2CopyWidget.routeName);
                               },
                               child: wrapWithModel(
-                                model: _model.buttonModel3,
+                                model: _model.buttonModel2,
                                 updateCallback: () => safeSetState(() {}),
                                 child: ButtonWidget(
                                   content: 'Back to Home',

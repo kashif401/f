@@ -55,7 +55,7 @@ class _SectionHeaderWidgetState extends State<SectionHeaderWidget> {
               'VENUE DETAILS',
             ),
             style: FlutterFlowTheme.of(context).titleSmall.override(
-                  font: GoogleFonts.plusJakartaSans(
+                  font: GoogleFonts.mulish(
                     fontWeight: FontWeight.bold,
                     fontStyle:
                         FlutterFlowTheme.of(context).titleSmall.fontStyle,

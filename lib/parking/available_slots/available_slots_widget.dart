@@ -89,7 +89,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .override(
-                                  font: GoogleFonts.plusJakartaSans(
+                                  font: GoogleFonts.mulish(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .fontWeight,
@@ -179,7 +179,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                           style: FlutterFlowTheme.of(context)
                               .labelSmall
                               .override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.mulish(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .fontWeight,
@@ -220,7 +220,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                           style: FlutterFlowTheme.of(context)
                               .labelSmall
                               .override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.mulish(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .fontWeight,
@@ -266,7 +266,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                           style: FlutterFlowTheme.of(context)
                               .labelSmall
                               .override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.mulish(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .labelSmall
                                       .fontWeight,
@@ -320,7 +320,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -449,7 +449,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelSmall
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -533,7 +533,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
@@ -680,7 +680,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -709,7 +709,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
@@ -745,7 +745,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .labelSmall
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .labelSmall
@@ -774,7 +774,7 @@ class _AvailableSlotsWidgetState extends State<AvailableSlotsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall

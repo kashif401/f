@@ -76,7 +76,7 @@ class _FacilityChipWidgetState extends State<FacilityChipWidget> {
                   'TV Screen',
                 ),
                 style: FlutterFlowTheme.of(context).labelMedium.override(
-                      font: GoogleFonts.inter(
+                      font: GoogleFonts.mulish(
                         fontWeight:
                             FlutterFlowTheme.of(context).labelMedium.fontWeight,
                         fontStyle:

@@ -87,7 +87,7 @@ class _ParkingSlotWidgetState extends State<ParkingSlotWidget> {
               'A-101',
             ),
             style: FlutterFlowTheme.of(context).labelSmall.override(
-                  font: GoogleFonts.inter(
+                  font: GoogleFonts.mulish(
                     fontWeight:
                         FlutterFlowTheme.of(context).labelSmall.fontWeight,
                     fontStyle:

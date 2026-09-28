@@ -46,7 +46,7 @@ List<dynamic> generateMonthDates(DateTime currentMonth) {
 }
 
 DateTime? addOneHour(DateTime? time) {
-  return time?.add(Duration(hours: 1));
+  return time?.add(const Duration(minutes: 30));
 }
 
 int updateAttendees(
@@ -61,4 +61,84 @@ int updateAttendees(
     }
     return 1;
   }
+}
+
+bool? hasTodayBookings(dynamic json) {
+  if (json == null) {
+    return false;
+  }
+
+  try {
+    final bookings = json['data']['todaysBookings'];
+
+    if (bookings is List && bookings.isNotEmpty) {
+      return true;
+    }
+
+    return false;
+  } catch (e) {
+    return false;
+  }
+}
+
+bool? hasUpcommingBookings(dynamic json) {
+  if (json == null) {
+    return false;
+  }
+
+  try {
+    final bookings = json['data']['upcomingBookings'];
+
+    if (bookings is List && bookings.isNotEmpty) {
+      return true;
+    }
+
+    return false;
+  } catch (e) {
+    return false;
+  }
+}
+
+String? getInitials(String name) {
+  if (name.trim().isEmpty) {
+    return "";
+  }
+
+  final parts = name.trim().split(RegExp(r'\s+'));
+
+  if (parts.length == 1) {
+    return parts.first.substring(0, 1).toUpperCase();
+  }
+
+  return (parts.first.substring(0, 1) + parts.last.substring(0, 1))
+      .toUpperCase();
+}
+
+dynamic removeEmployee(
+  dynamic employees,
+  String employeeCode,
+) {
+  List<dynamic> removeEmployee(
+    List<dynamic> employees,
+    String employeeCode,
+  ) {
+    return employees.where((e) {
+      return e['EMPLOYEE_CODE'].toString() != employeeCode;
+    }).toList();
+  }
+}
+
+bool? isLoggedInUser(
+  dynamic employee,
+  String loginId,
+) {
+  if (employee == null) {
+    return false;
+  }
+
+  return employee['LOGINID']?.toString() == loginId;
+}
+
+bool? isOtpIncomplete(String otp) {
+  return otp.trim().length != 6;
 }

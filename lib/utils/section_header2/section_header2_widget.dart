@@ -64,7 +64,7 @@ class _SectionHeader2WidgetState extends State<SectionHeader2Widget> {
                 'Quick Actions',
               ),
               style: FlutterFlowTheme.of(context).titleMedium.override(
-                    font: GoogleFonts.plusJakartaSans(
+                    font: GoogleFonts.mulish(
                       fontWeight: FontWeight.bold,
                       fontStyle:
                           FlutterFlowTheme.of(context).titleMedium.fontStyle,

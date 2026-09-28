@@ -8,11 +8,17 @@ import '/index.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'booking_confirmation_model.dart';
 export 'booking_confirmation_model.dart';
 
 class BookingConfirmationWidget extends StatefulWidget {
-  const BookingConfirmationWidget({super.key});
+  const BookingConfirmationWidget({
+    super.key,
+    required this.startTime,
+  });
+
+  final DateTime? startTime;
 
   static String routeName = 'BookingConfirmation';
   static String routePath = '/bookingConfirmation';
@@ -42,6 +48,8 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return GestureDetector(
       onTap: () {
         FocusScope.of(context).unfocus();
@@ -93,7 +101,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleLarge
                                           .fontWeight,
@@ -171,7 +179,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .headlineSmall
@@ -198,7 +206,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -282,13 +290,17 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Text(
-                                                  'Ganges Meeting Room',
+                                                  getJsonField(
+                                                    FFAppState()
+                                                        .apiresonsedatefilter,
+                                                    r'''$.data.roomName''',
+                                                  ).toString(),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .titleMedium
                                                       .override(
-                                                        font: GoogleFonts
-                                                            .plusJakartaSans(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -325,7 +337,8 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -381,7 +394,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .inter(
+                                                                        .mulish(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodySmall
@@ -449,7 +462,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -480,32 +493,35 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                     ),
                                               ),
                                               Text(
-                                                'Oct 25, 2023',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font:
-                                                              GoogleFonts.inter(
-                                                            fontWeight:
-                                                                FontWeight.w600,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          fontSize: 12.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                          lineHeight: 1.5,
-                                                        ),
+                                                getJsonField(
+                                                  FFAppState()
+                                                      .apiresonsedatefilter,
+                                                  r'''$.data.bookingDate''',
+                                                ).toString(),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: GoogleFonts.mulish(
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      fontSize: 12.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                      lineHeight: 1.5,
+                                                    ),
                                               ),
                                             ].divide(SizedBox(height: 4.0)),
                                           ),
@@ -522,7 +538,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -554,31 +570,30 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                               ),
                                               Text(
                                                 '10:00 AM - 11:30 AM',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font:
-                                                              GoogleFonts.inter(
-                                                            fontWeight:
-                                                                FontWeight.w600,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          fontSize: 12.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                          lineHeight: 1.5,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: GoogleFonts.mulish(
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      fontSize: 12.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                      lineHeight: 1.5,
+                                                    ),
                                               ),
                                             ].divide(SizedBox(height: 4.0)),
                                           ),
@@ -595,7 +610,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -627,31 +642,30 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                               ),
                                               Text(
                                                 '1.5 Hours',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font:
-                                                              GoogleFonts.inter(
-                                                            fontWeight:
-                                                                FontWeight.w600,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          fontSize: 12.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                          lineHeight: 1.5,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: GoogleFonts.mulish(
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      fontSize: 12.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                      lineHeight: 1.5,
+                                                    ),
                                               ),
                                             ].divide(SizedBox(height: 4.0)),
                                           ),
@@ -668,7 +682,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                         context)
                                                     .labelSmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -699,32 +713,35 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                     ),
                                               ),
                                               Text(
-                                                'Internal Meeting',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font:
-                                                              GoogleFonts.inter(
-                                                            fontWeight:
-                                                                FontWeight.w600,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          fontSize: 12.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                          lineHeight: 1.5,
-                                                        ),
+                                                getJsonField(
+                                                  FFAppState()
+                                                      .apiresonsedatefilter,
+                                                  r'''$.data.attendeeQrs.attendeeType''',
+                                                ).toString(),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: GoogleFonts.mulish(
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      fontSize: 12.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                      lineHeight: 1.5,
+                                                    ),
                                               ),
                                             ].divide(SizedBox(height: 4.0)),
                                           ),
@@ -886,7 +903,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodySmall
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -900,7 +917,7 @@ class _BookingConfirmationWidgetState extends State<BookingConfirmationWidget> {
                                                 ),
                                                 color:
                                                     FlutterFlowTheme.of(context)
-                                                        .secondaryText,
+                                                        .error,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)

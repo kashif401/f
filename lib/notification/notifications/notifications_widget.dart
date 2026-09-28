@@ -91,7 +91,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FontWeight.bold,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .titleLarge
@@ -235,7 +235,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .labelSmall
@@ -318,7 +318,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FontWeight.bold,
                                       fontStyle: FlutterFlowTheme.of(context)
                                           .labelSmall

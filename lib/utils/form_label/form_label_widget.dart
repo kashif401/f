@@ -50,11 +50,11 @@ class _FormLabelWidgetState extends State<FormLabelWidget> {
             'Location',
           ),
           style: FlutterFlowTheme.of(context).labelLarge.override(
-                font: GoogleFonts.inter(
+                font: GoogleFonts.mulish(
                   fontWeight: FontWeight.w600,
                   fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,
                 ),
-                color: FlutterFlowTheme.of(context).primaryText,
+                color: FlutterFlowTheme.of(context).secondaryText,
                 letterSpacing: 0.0,
                 fontWeight: FontWeight.w600,
                 fontStyle: FlutterFlowTheme.of(context).labelLarge.fontStyle,

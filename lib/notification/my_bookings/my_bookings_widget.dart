@@ -202,7 +202,7 @@ class _MyBookingsWidgetState extends State<MyBookingsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -237,7 +237,7 @@ class _MyBookingsWidgetState extends State<MyBookingsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight: FontWeight.bold,
                                                   fontStyle:
                                                       FlutterFlowTheme.of(
@@ -304,7 +304,7 @@ class _MyBookingsWidgetState extends State<MyBookingsWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -389,7 +389,7 @@ class _MyBookingsWidgetState extends State<MyBookingsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodySmall
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)

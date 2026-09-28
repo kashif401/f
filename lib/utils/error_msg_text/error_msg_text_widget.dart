@@ -53,7 +53,7 @@ class _ErrorMsgTextWidgetState extends State<ErrorMsgTextWidget> {
             'Error Message',
           ),
           style: FlutterFlowTheme.of(context).bodyMedium.override(
-                font: GoogleFonts.inter(
+                font: GoogleFonts.mulish(
                   fontWeight:
                       FlutterFlowTheme.of(context).bodyMedium.fontWeight,
                   fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,

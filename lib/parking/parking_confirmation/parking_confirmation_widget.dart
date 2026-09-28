@@ -87,7 +87,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
                                 .override(
-                                  font: GoogleFonts.plusJakartaSans(
+                                  font: GoogleFonts.mulish(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleLarge
                                         .fontWeight,
@@ -178,7 +178,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                         context)
                                                     .labelMedium
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -210,33 +210,33 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                               ),
                                               Text(
                                                 'P-102',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineSmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .plusJakartaSans(
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineSmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .headlineSmall
+                                                    .override(
+                                                      font: GoogleFonts.mulish(
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .headlineSmall
+                                                                .fontStyle,
+                                                      ),
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
                                                               .onSurface,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .headlineSmall
-                                                                  .fontStyle,
-                                                          lineHeight: 1.3,
-                                                        ),
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .headlineSmall
+                                                              .fontStyle,
+                                                      lineHeight: 1.3,
+                                                    ),
                                               ),
                                             ].divide(SizedBox(height: 4.0)),
                                           ),
@@ -260,7 +260,8 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                           context)
                                                       .labelLarge
                                                       .override(
-                                                        font: GoogleFonts.inter(
+                                                        font:
+                                                            GoogleFonts.mulish(
                                                           fontWeight:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -336,7 +337,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .inter(
+                                                                        .mulish(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
@@ -369,7 +370,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                           .bodyLarge
                                                           .override(
                                                             font: GoogleFonts
-                                                                .inter(
+                                                                .mulish(
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w600,
@@ -413,7 +414,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .inter(
+                                                                        .mulish(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
@@ -446,7 +447,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                           .bodyLarge
                                                           .override(
                                                             font: GoogleFonts
-                                                                .inter(
+                                                                .mulish(
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w600,
@@ -499,7 +500,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .inter(
+                                                                        .mulish(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
@@ -532,7 +533,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                           .bodyLarge
                                                           .override(
                                                             font: GoogleFonts
-                                                                .inter(
+                                                                .mulish(
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w600,
@@ -576,7 +577,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .inter(
+                                                                        .mulish(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
@@ -609,7 +610,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                                           .bodyLarge
                                                           .override(
                                                             font: GoogleFonts
-                                                                .inter(
+                                                                .mulish(
                                                               fontWeight:
                                                                   FontWeight
                                                                       .w600,
@@ -676,7 +677,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodySmall
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -751,7 +752,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .fontWeight,
@@ -776,7 +777,7 @@ class _ParkingConfirmationWidgetState extends State<ParkingConfirmationWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleMedium
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FontWeight.bold,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .titleMedium

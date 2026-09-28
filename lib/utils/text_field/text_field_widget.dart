@@ -96,7 +96,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
             Text(
               widget.label,
               style: FlutterFlowTheme.of(context).labelMedium.override(
-                    font: GoogleFonts.inter(
+                    font: GoogleFonts.mulish(
                       fontWeight:
                           FlutterFlowTheme.of(context).labelMedium.fontWeight,
                       fontStyle:
@@ -285,7 +285,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                           hintStyle: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                font: GoogleFonts.inter(
+                                font: GoogleFonts.mulish(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .fontWeight,
@@ -317,7 +317,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                           focusedErrorBorder: InputBorder.none,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.mulish(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .fontWeight,
@@ -378,7 +378,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
             Text(
               widget.helper,
               style: FlutterFlowTheme.of(context).bodySmall.override(
-                    font: GoogleFonts.inter(
+                    font: GoogleFonts.mulish(
                       fontWeight:
                           FlutterFlowTheme.of(context).bodySmall.fontWeight,
                       fontStyle:

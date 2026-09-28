@@ -87,7 +87,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontWeight,
@@ -160,7 +160,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .fontWeight,
@@ -185,7 +185,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .displaySmall
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FontWeight.bold,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .displaySmall
@@ -216,7 +216,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
@@ -279,7 +279,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .fontWeight,
@@ -332,7 +332,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .fontWeight,
@@ -396,7 +396,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.mulish(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
@@ -425,7 +425,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.mulish(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleMedium
@@ -467,7 +467,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              font: GoogleFonts.inter(
+                                              font: GoogleFonts.mulish(
                                                 fontWeight:
                                                     FlutterFlowTheme.of(context)
                                                         .labelMedium
@@ -519,7 +519,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.mulish(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
@@ -548,7 +548,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.mulish(
                                               fontWeight: FontWeight.w600,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
@@ -654,7 +654,7 @@ class _ActiveParkingWidgetState extends State<ActiveParkingWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
-                                      font: GoogleFonts.inter(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .fontWeight,

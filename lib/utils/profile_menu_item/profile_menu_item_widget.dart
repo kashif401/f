@@ -78,7 +78,7 @@ class _ProfileMenuItemWidgetState extends State<ProfileMenuItemWidget> {
                         'My Details',
                       ),
                       style: FlutterFlowTheme.of(context).bodyLarge.override(
-                            font: GoogleFonts.inter(
+                            font: GoogleFonts.mulish(
                               fontWeight: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .fontWeight,

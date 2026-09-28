@@ -89,7 +89,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .headlineMedium
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .headlineMedium
                                             .fontWeight,
@@ -114,7 +114,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleMedium
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .fontWeight,
@@ -173,7 +173,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.mulish(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall
@@ -216,7 +216,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
-                                            font: GoogleFonts.inter(
+                                            font: GoogleFonts.mulish(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
@@ -245,7 +245,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .override(
-                                            font: GoogleFonts.plusJakartaSans(
+                                            font: GoogleFonts.mulish(
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .titleMedium
@@ -286,7 +286,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  font: GoogleFonts.inter(
+                                  font: GoogleFonts.mulish(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelLarge
                                         .fontWeight,
@@ -322,7 +322,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -351,7 +351,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -380,7 +380,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -409,7 +409,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -445,7 +445,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .titleMedium
@@ -474,7 +474,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .override(
-                                          font: GoogleFonts.plusJakartaSans(
+                                          font: GoogleFonts.mulish(
                                             fontWeight: FontWeight.bold,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
@@ -563,7 +563,7 @@ class _OrderSuccessWidgetState extends State<OrderSuccessWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(
-                                          font: GoogleFonts.inter(
+                                          font: GoogleFonts.mulish(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall

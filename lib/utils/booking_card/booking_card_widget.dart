@@ -80,7 +80,7 @@ class _BookingCardWidgetState extends State<BookingCardWidget> {
                       'Meeting\nRooms',
                     ),
                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                          font: GoogleFonts.inter(
+                          font: GoogleFonts.mulish(
                             fontWeight: FontWeight.w600,
                             fontStyle: FlutterFlowTheme.of(context)
                                 .labelLarge

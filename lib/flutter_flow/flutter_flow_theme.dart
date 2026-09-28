@@ -62,6 +62,17 @@ abstract class FlutterFlowTheme {
   late Color info30;
   late Color success15;
   late Color primary20;
+  late Color secondaryBackground60;
+  late Color secondaryBackground50;
+  late Color background40;
+  late Color onPrimary10;
+  late Color onPrimary20;
+  late Color surface20;
+  late Color onPrimary80;
+  late Color onPrimary60;
+  late Color fullContrast6;
+  late Color primary5;
+  late Color accent15;
 
   FFDesignTokens get designToken => FFDesignTokens(this);
 
@@ -152,44 +163,44 @@ class LightModeTheme extends FlutterFlowTheme {
   Color get tertiaryColor => tertiary;
 
   late Color primary = const Color(0xFFF58220);
-  late Color secondary = const Color(0xFF00529B);
+  late Color secondary = const Color(0xFF4A5568);
   late Color tertiary = const Color(0xFFF58220);
-  late Color alternate = const Color(0xFFEAECF0);
-  late Color primaryText = const Color(0xFF1A1C1E);
-  late Color secondaryText = const Color(0xFF667085);
+  late Color alternate = const Color(0xFFEDF2F7);
+  late Color primaryText = const Color(0xFF1A202C);
+  late Color secondaryText = const Color(0xFF718096);
   late Color primaryBackground = const Color(0xFFFFFFFF);
   late Color secondaryBackground = const Color(0xFFFFFFFF);
   late Color accent1 = const Color(0x4C4B39EF);
   late Color accent2 = const Color(0x4D39D2C0);
-  late Color accent3 = const Color(0xFF98A2B3);
+  late Color accent3 = const Color(0xFFA0AEC0);
   late Color accent4 = const Color(0xCCFFFFFF);
-  late Color success = const Color(0xFF12B76A);
-  late Color warning = const Color(0xFFF79009);
-  late Color error = const Color(0xFFF04438);
-  late Color info = const Color(0xFF2E90FA);
+  late Color success = const Color(0xFF22C55E);
+  late Color warning = const Color(0xFFF59E0B);
+  late Color error = const Color(0xFFEF4444);
+  late Color info = const Color(0xFF3B82F6);
 
   late Color onPrimary = const Color(0xFFFFFFFF);
-  late Color primaryContainer = const Color(0x1AF58220);
-  late Color onPrimaryContainer = const Color(0xFF1A1C1E);
+  late Color primaryContainer = const Color(0x1A133359);
+  late Color onPrimaryContainer = const Color(0xFF1A202C);
   late Color onSecondary = const Color(0xFFFFFFFF);
-  late Color secondaryContainer = const Color(0x1A00529B);
-  late Color onSecondaryContainer = const Color(0xFF1A1C1E);
+  late Color secondaryContainer = const Color(0x1A4A5568);
+  late Color onSecondaryContainer = const Color(0xFF1A202C);
   late Color onAccent = const Color(0xFFFFFFFF);
   late Color accentContainer = const Color(0x1AF58220);
-  late Color onAccentContainer = const Color(0xFF1A1C1E);
-  late Color onBackground = const Color(0xFF1A1C1E);
+  late Color onAccentContainer = const Color(0xFF1A202C);
+  late Color onBackground = const Color(0xFF1A202C);
   late Color secondarybackground1 = const Color(0xFBF8F9FA);
-  late Color onSurface = const Color(0xFF1A1C1E);
-  late Color surfaceVariant = const Color(0xFFF2F4F7);
-  late Color onSurfaceVariant = const Color(0xFF667085);
+  late Color onSurface = const Color(0xFF1A202C);
+  late Color surfaceVariant = const Color(0xFFF1F5F9);
+  late Color onSurfaceVariant = const Color(0xFF718096);
   late Color onSuccess = const Color(0xFFFFFFFF);
   late Color onWarning = const Color(0xFFFFFFFF);
   late Color onError = const Color(0xFFFFFFFF);
   late Color onInfo = const Color(0xFFFFFFFF);
   late Color transparent = const Color(0x00000000);
   late Color fullContrast = const Color(0xFF000000);
-  late Color primary10 = const Color(0x1AF58220);
-  late Color success10 = const Color(0x1A12B76A);
+  late Color primary10 = const Color(0x1A133359);
+  late Color success10 = const Color(0x1A22C55E);
   late Color primary8 = const Color(0x14F58220);
   late Color warning10 = const Color(0x1AF79009);
   late Color secondary20 = const Color(0x3300529B);
@@ -198,6 +209,17 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color info30 = const Color(0x4D2E90FA);
   late Color success15 = const Color(0x2612B76A);
   late Color primary20 = const Color(0x33F58220);
+  late Color secondaryBackground60 = const Color(0x99F5F5F5);
+  late Color secondaryBackground50 = const Color(0x80F5F5F5);
+  late Color background40 = const Color(0x66FFFFFF);
+  late Color onPrimary10 = const Color(0x1AFFFFFF);
+  late Color onPrimary20 = const Color(0x33FFFFFF);
+  late Color surface20 = const Color(0x33FFFFFF);
+  late Color onPrimary80 = const Color(0xCCFFFFFF);
+  late Color onPrimary60 = const Color(0x99FFFFFF);
+  late Color fullContrast6 = const Color(0x0F000000);
+  late Color primary5 = const Color(0x0D133359);
+  late Color accent15 = const Color(0x26F58220);
 }
 
 abstract class Typography {
@@ -253,125 +275,125 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get displayLargeFamily => 'Plus Jakarta Sans';
+  String get displayLargeFamily => 'Mulish';
   bool get displayLargeIsCustom => false;
-  TextStyle get displayLarge => GoogleFonts.plusJakartaSans(
+  TextStyle get displayLarge => GoogleFonts.mulish(
         color: theme.primaryText,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w800,
         fontSize: 57.0,
         height: 1.1,
       );
-  String get displayMediumFamily => 'Plus Jakarta Sans';
+  String get displayMediumFamily => 'Mulish';
   bool get displayMediumIsCustom => false;
-  TextStyle get displayMedium => GoogleFonts.plusJakartaSans(
+  TextStyle get displayMedium => GoogleFonts.mulish(
         color: theme.primaryText,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w800,
         fontSize: 45.0,
-        height: 1.2,
+        height: 1.15,
       );
-  String get displaySmallFamily => 'Plus Jakarta Sans';
+  String get displaySmallFamily => 'Mulish';
   bool get displaySmallIsCustom => false;
-  TextStyle get displaySmall => GoogleFonts.plusJakartaSans(
+  TextStyle get displaySmall => GoogleFonts.mulish(
         color: theme.primaryText,
         fontWeight: FontWeight.bold,
         fontSize: 36.0,
         height: 1.2,
       );
-  String get headlineLargeFamily => 'Plus Jakarta Sans';
+  String get headlineLargeFamily => 'Mulish';
   bool get headlineLargeIsCustom => false;
-  TextStyle get headlineLarge => GoogleFonts.plusJakartaSans(
+  TextStyle get headlineLarge => GoogleFonts.mulish(
         color: theme.primaryText,
         fontWeight: FontWeight.bold,
         fontSize: 32.0,
-        height: 1.2,
+        height: 1.25,
       );
-  String get headlineMediumFamily => 'Plus Jakarta Sans';
+  String get headlineMediumFamily => 'Mulish';
   bool get headlineMediumIsCustom => false;
-  TextStyle get headlineMedium => GoogleFonts.plusJakartaSans(
+  TextStyle get headlineMedium => GoogleFonts.mulish(
         color: theme.primaryText,
-        fontWeight: FontWeight.w600,
-        fontSize: 26.0,
+        fontWeight: FontWeight.bold,
+        fontSize: 28.0,
         height: 1.3,
       );
-  String get headlineSmallFamily => 'Plus Jakarta Sans';
+  String get headlineSmallFamily => 'Mulish';
   bool get headlineSmallIsCustom => false;
-  TextStyle get headlineSmall => GoogleFonts.plusJakartaSans(
+  TextStyle get headlineSmall => GoogleFonts.mulish(
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 24.0,
-        height: 1.3,
+        height: 1.35,
       );
-  String get titleLargeFamily => 'Plus Jakarta Sans';
+  String get titleLargeFamily => 'Mulish';
   bool get titleLargeIsCustom => false;
-  TextStyle get titleLarge => GoogleFonts.plusJakartaSans(
+  TextStyle get titleLarge => GoogleFonts.mulish(
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 20.0,
+        height: 1.4,
+      );
+  String get titleMediumFamily => 'Mulish';
+  bool get titleMediumIsCustom => false;
+  TextStyle get titleMedium => GoogleFonts.mulish(
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 16.0,
+        height: 1.4,
+      );
+  String get titleSmallFamily => 'Mulish';
+  bool get titleSmallIsCustom => false;
+  TextStyle get titleSmall => GoogleFonts.mulish(
+        color: theme.primaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 14.0,
+        height: 1.4,
+      );
+  String get labelLargeFamily => 'Mulish';
+  bool get labelLargeIsCustom => false;
+  TextStyle get labelLarge => GoogleFonts.mulish(
+        color: theme.secondaryText,
+        fontWeight: FontWeight.w600,
+        fontSize: 14.0,
         height: 1.3,
       );
-  String get titleMediumFamily => 'Plus Jakarta Sans';
-  bool get titleMediumIsCustom => false;
-  TextStyle get titleMedium => GoogleFonts.plusJakartaSans(
-        color: theme.primaryText,
-        fontWeight: FontWeight.w600,
-        fontSize: 16.0,
-        height: 1.4,
-      );
-  String get titleSmallFamily => 'Plus Jakarta Sans';
-  bool get titleSmallIsCustom => false;
-  TextStyle get titleSmall => GoogleFonts.plusJakartaSans(
-        color: theme.primaryText,
-        fontWeight: FontWeight.w600,
-        fontSize: 14.0,
-        height: 1.4,
-      );
-  String get labelLargeFamily => 'Inter';
-  bool get labelLargeIsCustom => false;
-  TextStyle get labelLarge => GoogleFonts.inter(
-        color: theme.secondaryText,
-        fontWeight: FontWeight.w600,
-        fontSize: 14.0,
-        height: 1.2,
-      );
-  String get labelMediumFamily => 'Inter';
+  String get labelMediumFamily => 'Mulish';
   bool get labelMediumIsCustom => false;
-  TextStyle get labelMedium => GoogleFonts.inter(
+  TextStyle get labelMedium => GoogleFonts.mulish(
         color: theme.secondaryText,
         fontWeight: FontWeight.w600,
         fontSize: 12.0,
-        height: 1.2,
+        height: 1.3,
       );
-  String get labelSmallFamily => 'Inter';
+  String get labelSmallFamily => 'Mulish';
   bool get labelSmallIsCustom => false;
-  TextStyle get labelSmall => GoogleFonts.inter(
+  TextStyle get labelSmall => GoogleFonts.mulish(
         color: theme.secondaryText,
-        fontWeight: FontWeight.w600,
-        fontSize: 10.0,
-        height: 1.2,
+        fontWeight: FontWeight.bold,
+        fontSize: 11.0,
+        height: 1.3,
       );
-  String get bodyLargeFamily => 'Inter';
+  String get bodyLargeFamily => 'Mulish';
   bool get bodyLargeIsCustom => false;
-  TextStyle get bodyLarge => GoogleFonts.inter(
+  TextStyle get bodyLarge => GoogleFonts.mulish(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 16.0,
         height: 1.5,
       );
-  String get bodyMediumFamily => 'Inter';
+  String get bodyMediumFamily => 'Mulish';
   bool get bodyMediumIsCustom => false;
-  TextStyle get bodyMedium => GoogleFonts.inter(
+  TextStyle get bodyMedium => GoogleFonts.mulish(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
         height: 1.5,
       );
-  String get bodySmallFamily => 'Inter';
+  String get bodySmallFamily => 'Mulish';
   bool get bodySmallIsCustom => false;
-  TextStyle get bodySmall => GoogleFonts.inter(
+  TextStyle get bodySmall => GoogleFonts.mulish(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,
-        height: 1.4,
+        height: 1.5,
       );
 }
 
@@ -399,11 +421,11 @@ class FFRadius {
   const FFRadius();
   double get none => 0.0;
   double get xs => 4.0;
-  double get sm => 6.0;
-  double get md => 8.0;
-  double get lg => 12.0;
-  double get xl => 16.0;
-  double get xxl => 24.0;
+  double get sm => 8.0;
+  double get md => 12.0;
+  double get lg => 16.0;
+  double get xl => 24.0;
+  double get xxl => 32.0;
   double get full => 9999.0;
 }
 
@@ -417,34 +439,34 @@ class FFShadows {
       spreadRadius: 0.0);
   BoxShadow get xs => const BoxShadow(
       blurRadius: 2.0,
-      color: const Color(0x0D101828),
+      color: const Color(0x0A133359),
       offset: const Offset(0.0, 1.0),
       spreadRadius: 0.0);
   BoxShadow get sm => const BoxShadow(
-      blurRadius: 3.0,
-      color: const Color(0x1A101828),
-      offset: const Offset(0.0, 1.0),
+      blurRadius: 4.0,
+      color: const Color(0x0F133359),
+      offset: const Offset(0.0, 2.0),
       spreadRadius: 0.0);
   BoxShadow get md => const BoxShadow(
-      blurRadius: 6.0,
-      color: const Color(0x1A101828),
+      blurRadius: 8.0,
+      color: const Color(0x14133359),
       offset: const Offset(0.0, 4.0),
-      spreadRadius: -2.0);
+      spreadRadius: 0.0);
   BoxShadow get lg => const BoxShadow(
       blurRadius: 16.0,
-      color: const Color(0x1A101828),
-      offset: const Offset(0.0, 12.0),
-      spreadRadius: -4.0);
+      color: const Color(0x1A133359),
+      offset: const Offset(0.0, 8.0),
+      spreadRadius: 0.0);
   BoxShadow get xl => const BoxShadow(
       blurRadius: 24.0,
-      color: const Color(0x1A101828),
-      offset: const Offset(0.0, 20.0),
-      spreadRadius: -4.0);
+      color: const Color(0x1F133359),
+      offset: const Offset(0.0, 12.0),
+      spreadRadius: 0.0);
   BoxShadow get xxl => const BoxShadow(
-      blurRadius: 48.0,
-      color: const Color(0x1A101828),
-      offset: const Offset(0.0, 24.0),
-      spreadRadius: -12.0);
+      blurRadius: 40.0,
+      color: const Color(0x24133359),
+      offset: const Offset(0.0, 20.0),
+      spreadRadius: 0.0);
 }
 
 extension TextStyleHelper on TextStyle {
@@ -462,7 +484,7 @@ extension TextStyleHelper on TextStyle {
     List<Shadow>? shadows,
     String? package,
   }) {
-    if (useGoogleFonts && fontFamily != null) {
+    if (useGoogleFonts && fontFamily != null && fontFamily.isNotEmpty) {
       font = GoogleFonts.getFont(fontFamily,
           fontWeight: fontWeight ?? this.fontWeight,
           fontStyle: fontStyle ?? this.fontStyle);

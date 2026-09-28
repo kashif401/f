@@ -91,7 +91,7 @@ class _OnboardingSlideWidgetState extends State<OnboardingSlideWidget> {
                 ),
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
-                      font: GoogleFonts.plusJakartaSans(
+                      font: GoogleFonts.mulish(
                         fontWeight: FontWeight.w800,
                         fontStyle: FlutterFlowTheme.of(context)
                             .headlineMedium
@@ -113,7 +113,7 @@ class _OnboardingSlideWidgetState extends State<OnboardingSlideWidget> {
                 ),
                 textAlign: TextAlign.center,
                 style: FlutterFlowTheme.of(context).bodyLarge.override(
-                      font: GoogleFonts.inter(
+                      font: GoogleFonts.mulish(
                         fontWeight:
                             FlutterFlowTheme.of(context).bodyLarge.fontWeight,
                         fontStyle:

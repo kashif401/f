@@ -78,7 +78,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
-                                      font: GoogleFonts.plusJakartaSans(
+                                      font: GoogleFonts.mulish(
                                         fontWeight: FlutterFlowTheme.of(context)
                                             .headlineSmall
                                             .fontWeight,
@@ -175,7 +175,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -235,7 +235,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -295,7 +295,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -355,7 +355,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
-                                                font: GoogleFonts.inter(
+                                                font: GoogleFonts.mulish(
                                                   fontWeight:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -461,7 +461,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -509,7 +509,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                         .titleMedium
                                                         .override(
                                                           font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -566,7 +566,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .inter(
+                                                                        .mulish(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelSmall
@@ -603,7 +603,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                         context)
                                                     .bodySmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -646,8 +646,8 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -682,8 +682,8 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -761,7 +761,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -809,7 +809,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                         .titleMedium
                                                         .override(
                                                           font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -866,7 +866,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .inter(
+                                                                        .mulish(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelSmall
@@ -903,7 +903,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                         context)
                                                     .bodySmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -946,8 +946,8 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -982,8 +982,8 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1061,7 +1061,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -1109,7 +1109,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                         .titleMedium
                                                         .override(
                                                           font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1166,7 +1166,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .inter(
+                                                                        .mulish(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelSmall
@@ -1203,7 +1203,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                         context)
                                                     .bodySmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1246,8 +1246,8 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1282,8 +1282,8 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1361,7 +1361,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight: FontWeight.w600,
                                                     fontStyle:
                                                         FlutterFlowTheme.of(
@@ -1409,7 +1409,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                         .titleMedium
                                                         .override(
                                                           font: GoogleFonts
-                                                              .plusJakartaSans(
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1466,7 +1466,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                               .override(
                                                                 font:
                                                                     GoogleFonts
-                                                                        .inter(
+                                                                        .mulish(
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelSmall
@@ -1503,7 +1503,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                         context)
                                                     .bodySmall
                                                     .override(
-                                                      font: GoogleFonts.inter(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -1546,8 +1546,8 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1582,8 +1582,8 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          font:
-                                                              GoogleFonts.inter(
+                                                          font: GoogleFonts
+                                                              .mulish(
                                                             fontWeight:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1645,7 +1645,7 @@ class _VisitorListWidgetState extends State<VisitorListWidget> {
               label: Text(
                 'Add Visitor',
                 style: FlutterFlowTheme.of(context).labelLarge.override(
-                      font: GoogleFonts.inter(
+                      font: GoogleFonts.mulish(
                         fontWeight:
                             FlutterFlowTheme.of(context).labelLarge.fontWeight,
                         fontStyle:

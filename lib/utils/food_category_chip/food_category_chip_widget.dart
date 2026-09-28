@@ -87,7 +87,7 @@ class _FoodCategoryChipWidgetState extends State<FoodCategoryChipWidget> {
                   'All Items',
                 ),
                 style: FlutterFlowTheme.of(context).labelLarge.override(
-                      font: GoogleFonts.inter(
+                      font: GoogleFonts.mulish(
                         fontWeight:
                             FlutterFlowTheme.of(context).labelLarge.fontWeight,
                         fontStyle:

@@ -89,7 +89,7 @@ class _VisitorRegistrationSuccessWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .titleMedium
                                   .override(
-                                    font: GoogleFonts.plusJakartaSans(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .titleMedium
                                           .fontWeight,
@@ -151,7 +151,7 @@ class _VisitorRegistrationSuccessWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
                                       .override(
-                                        font: GoogleFonts.plusJakartaSans(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .headlineSmall
@@ -180,7 +180,7 @@ class _VisitorRegistrationSuccessWidgetState
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        font: GoogleFonts.inter(
+                                        font: GoogleFonts.mulish(
                                           fontWeight:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -232,7 +232,7 @@ class _VisitorRegistrationSuccessWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -266,7 +266,7 @@ class _VisitorRegistrationSuccessWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -317,7 +317,7 @@ class _VisitorRegistrationSuccessWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -351,7 +351,7 @@ class _VisitorRegistrationSuccessWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -402,7 +402,7 @@ class _VisitorRegistrationSuccessWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -436,7 +436,7 @@ class _VisitorRegistrationSuccessWidgetState
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
-                                                  font: GoogleFonts.inter(
+                                                  font: GoogleFonts.mulish(
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)

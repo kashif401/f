@@ -170,8 +170,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      font: GoogleFonts
-                                                          .plusJakartaSans(
+                                                      font: GoogleFonts.mulish(
                                                         fontWeight:
                                                             FlutterFlowTheme.of(
                                                                     context)

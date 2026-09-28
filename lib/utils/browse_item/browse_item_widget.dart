@@ -78,7 +78,7 @@ class _BrowseItemWidgetState extends State<BrowseItemWidget> {
                   'Favourites',
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      font: GoogleFonts.inter(
+                      font: GoogleFonts.mulish(
                         fontWeight: FontWeight.w500,
                         fontStyle:
                             FlutterFlowTheme.of(context).bodyMedium.fontStyle,

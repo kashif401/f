@@ -110,7 +110,7 @@ class _BookingListItemWidgetState extends State<BookingListItemWidget> {
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                font: GoogleFonts.plusJakartaSans(
+                                font: GoogleFonts.mulish(
                                   fontWeight: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .fontWeight,
@@ -144,7 +144,7 @@ class _BookingListItemWidgetState extends State<BookingListItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .fontWeight,
@@ -184,7 +184,7 @@ class _BookingListItemWidgetState extends State<BookingListItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .fontWeight,
@@ -234,7 +234,7 @@ class _BookingListItemWidgetState extends State<BookingListItemWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall
                                   .override(
-                                    font: GoogleFonts.inter(
+                                    font: GoogleFonts.mulish(
                                       fontWeight: FlutterFlowTheme.of(context)
                                           .labelSmall
                                           .fontWeight,
@@ -265,7 +265,7 @@ class _BookingListItemWidgetState extends State<BookingListItemWidget> {
                           'Oct 24',
                         ),
                         style: FlutterFlowTheme.of(context).labelSmall.override(
-                              font: GoogleFonts.inter(
+                              font: GoogleFonts.mulish(
                                 fontWeight: FlutterFlowTheme.of(context)
                                     .labelSmall
                                     .fontWeight,
